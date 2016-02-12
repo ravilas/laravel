@@ -11,10 +11,25 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('welcome', function () {
     return view('welcome');
 });
 
+Route::get('/'
+	, ['as' => 'Main'
+		, 'uses' => 'PagesController@getIndex']);
+Route::get('about'
+	, ['as' => 'about'
+		, 'uses' => 'PagesController@getAbout']);
+Route::get('about/{id}'
+	, ['as' => 'aboutId'
+		, 'uses' => 'PagesController@getAboutId']);
+Route::get('help/contact'
+	, ['as' => 'help'
+		, 'uses' => 'PagesController@getContact']);
+Route::get('help'
+	, ['as' => 'help'
+		, 'uses' => 'PagesController@getHelp']);
 /*
 |--------------------------------------------------------------------------
 | Application Routes
