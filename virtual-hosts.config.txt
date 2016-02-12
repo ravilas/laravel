@@ -1,0 +1,11 @@
+
+  <VirtualHost *>
+    DocumentRoot "E:/git/laravelPractice/public"
+    ServerName laravelPractice.dev
+    <Directory "E:/git/laravelPractice/public">
+      Order allow,deny
+      Allow from all
+    </Directory>
+    ErrorLog "E:/git/laravelPractice/laravelPractice.dev-error_log.txt"
+    CustomLog "E:/git/laravelPractice/mlaravelPractice.dev-access_log.txt" common
+  </VirtualHost>
