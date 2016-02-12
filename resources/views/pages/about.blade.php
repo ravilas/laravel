@@ -1,5 +1,4 @@
-@extends('layouts.head')
-@extends('layouts.footer')
+@extends('layouts.body')
 
 @section('title')
     About
@@ -12,7 +11,4 @@
                 <div class="title">about</div>
             </div>
         </div>
-@stop
-
-@section('footer')
 @stop

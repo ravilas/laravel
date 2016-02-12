@@ -64,3 +64,5 @@ function get_site_url() {
                 <div class="contentholder">
                     <div class="content">
 @yield('body')
+
+@include('layouts.footer')

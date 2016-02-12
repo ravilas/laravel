@@ -1,5 +1,4 @@
-@extends('layouts.head')
-@extends('layouts.footer')
+@extends('layouts.body')
 
 @section('title')
     About {{$id}}
@@ -35,7 +34,4 @@
                 </div>
             </div>
         </div>
-@stop
-
-@section('footer')
 @stop
