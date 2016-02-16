@@ -25,4 +25,17 @@ class PagesController extends Controller
                 ->with('isUserRegistered', $isUserRegistered);
         //return view('user.profile', ['user' => User::findOrFail($id)]);
     }
+    public function getAboutIdAuth($id = '') {
+        $this->middleware('auth');
+
+        $this->middleware('log', ['only' => [
+            'fooAction',
+            'barAction',
+        ]]);
+
+        $this->middleware('subscribed', ['except' => [
+            'fooAction',
+            'barAction',
+        ]]);
+    }
 }

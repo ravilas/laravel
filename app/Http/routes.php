@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Routes File
@@ -24,12 +23,21 @@ Route::get('about'
 Route::get('about/{id}'
 	, ['as' => 'aboutId'
 		, 'uses' => 'PagesController@getAboutId']);
+Route::get('aboutAuth/{id}'
+	, ['as' => 'getAboutIdAuth'
+	    , 'middleware' => 'auth'
+		, 'uses' => 'PagesController@getAboutIdAuth']);
 Route::get('help/contact'
 	, ['as' => 'help'
 		, 'uses' => 'PagesController@getContact']);
+Route::get('login'
+	, ['as' => 'login'
+		, 'uses' => 'UserLogger@login']);
 Route::get('help'
 	, ['as' => 'help'
 		, 'uses' => 'PagesController@getHelp']);
+
+Route::resource('product','ProductController');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
