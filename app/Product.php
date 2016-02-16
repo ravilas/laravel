@@ -15,13 +15,13 @@ class Product extends Model
     //protected $index = 'id';
 
     /**
-     * Scope a query to only include active users.
+     * Scope a query to limit and get offset.
      *
      * @return \Illuminate\Database\Eloquent\Builder
      */
     public function scopeFilterAll($query, $from, $to)
     {
-        return $query->limit('$to')->offset('$from');
+        return $query->limit($to)->offset($from);
     }
 
 }
