@@ -20,8 +20,9 @@ class PagesController extends Controller
     }
     public function getAboutId($id = '') {
         $isUserRegistered = false;
-        $foreachArr = ['k1' => 'a', 'k6' => 'b', 'k5' => 'c', 'k4' => 'd'];
-        return view('pages.aboutid', ['id' => $id, 'arrFE' => $foreachArr])
+        $params = compact('id');
+        $params['arrFE'] = ['k1' => 'a', 'k6' => 'b', 'k5' => 'c', 'k4' => 'd'];
+        return view('pages.aboutid', $params)
                 ->with('isUserRegistered', $isUserRegistered);
         //return view('user.profile', ['user' => User::findOrFail($id)]);
     }

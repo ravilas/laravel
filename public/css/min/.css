@@ -1,0 +1,57 @@
+/*
+Error: Invalid CSS after "... vertical-align": expected ";", was ": middle;"
+        on line 86 of src/scss/public/why-costa-rica.scss
+
+81:         h2{
+82:            font-size:144%;
+83:            padding-top: 10%;
+84:            height: 200px;
+85:            display:table-cell
+86:            vertical-align: middle;
+87:     width: 100%;
+88:     text-align: center;
+89:     margin: 0 auto;
+90:         }
+91:         
+
+Backtrace:
+src/scss/public/why-costa-rica.scss:86
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:1163:in `expected'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:1097:in `expected'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:1092:in `tok!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:757:in `try_declaration'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:1137:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:1137:in `rethrow'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:767:in `try_declaration'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:692:in `declaration_or_ruleset'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:657:in `block_child'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:649:in `block_contents'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:638:in `block'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:708:in `declaration_or_ruleset'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:657:in `block_child'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:649:in `block_contents'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:638:in `block'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:708:in `declaration_or_ruleset'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:657:in `block_child'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:649:in `block_contents'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:638:in `block'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:632:in `ruleset'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:656:in `block_child'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:649:in `block_contents'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:117:in `stylesheet'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/scss/parser.rb:42:in `parse'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/engine.rb:403:in `_to_tree'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/engine.rb:378:in `_render_with_sourcemap'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/engine.rb:295:in `render_with_sourcemap'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/exec/sass_scss.rb:412:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/../lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.19/bin/sass:13
+C:/Ruby187/bin/sass:19:in `load'
+C:/Ruby187/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"... vertical-align\": expected \";\", was \": middle;\"\A         on line 86 of src/scss/public/why-costa-rica.scss\A \A 81:         h2{\A 82:            font-size:144%;\A 83:            padding-top: 10%;\A 84:            height: 200px;\A 85:            display:table-cell\A 86:            vertical-align: middle;\A 87:     width: 100%;\A 88:     text-align: center;\A 89:     margin: 0 auto;\A 90:         }\A 91:         "; }
