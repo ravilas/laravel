@@ -136,7 +136,7 @@ function jeg_get_js_option()
 }
 ?>
 <head>
-    <title>@yield('tile')</title>
+    <title>@yield('title')</title>
     <meta http-equiv="Content-Type" content="; charset=" />
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
